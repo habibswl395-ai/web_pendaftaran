@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websiste pendaftaran Mahasiswa</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Form Pendaftaran Mahasiswa</h1>
+        <p>Informasi dan Pendaftaran kegiatan mahasiswa</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profil</a></li>
+            <li><a href="pendaftaran.html">Pendaftaran</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Form Pendaftaran</h2>
+        <p>Selamat datang di form pendaftaran mahasiswa</p>
+
+        <form>
+            <label>Nama Depan :</label>
+            <input type="text" name="nama"
+            placeholder="Masukan Nama Depan" required/>
+            <br> <br>
+             <label>Nama Belakang :</label>
+            <input type="text" name="nama"
+            placeholder="Masukan Nama Belakang" required/>
+            <br> <br>
+
+
+            <label>Nim :</label>
+            <input type="text" name="nim"
+            placeholder="Masukan Nim anda" required/>
+            <br> <br>
+
+
+            <label>Email :</label>
+            <input type="email" name="email"
+            placeholder="Masukan Email" required/>
+            <br> <br>
+
+            <label>Gender :</label>
+            <input type="radio" name="gender"
+            value="Laki-laki" />Laki-laki 
+            <input type="radio" name="gender"
+            value="Perempuan" />Perempuan
+            <br> <br>
+
+            <label>Pilih Minat</label><br>
+            <select name="minat">
+                <option value="">---Pilih Minat Anda---</option>
+                <option>UI/UX Design</option>
+                <option>Forn End</option>
+                <option>Back End</option>
+                <option>Data Analyst</option>
+            </select><br><br>
+
+
+            <label>Hobi:</label>
+            <input type="checkbox"> Treveling
+            <input type="checkbox"> Shopping
+            <input type="checkbox"> Tidur
+            <input type="checkbox"> Makan
+            <br><br>
+
+            <label>Anak Ke :</label>
+            <input type="number" name="anak" min="1" max="12">
+            <br><br>
+            
+
+            <label>Tanggal Lahir :</label>
+            <input type="date" name="tanggal_lahir">
+            <br><br>
+
+            <label>Waktu Kedatangan :</label>
+            <input type="time" name="time">
+            <br><br>
+
+            <label>Alamat Lengkap :</label>
+            <textarea name="alamat" rows="5" cols="30"placeholder="tuliskan alamat lengkap anda"></textarea>
+            <br><br>
+
+            <button type="submit">Simpan</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+</body>
+
+
+<footer>
+    <p>&copy;2026 Pendaftaran Mahasiswa.</p>
+</footer>
+</html>

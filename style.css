@@ -1,0 +1,465 @@
+/* =========================
+   HALAMAN
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #eef2f7;
+    color: #0964ed;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background: linear-gradient(135deg, #424959, #05ff2f);
+    color: #ffffff;
+    text-align: center;
+    padding: 35px 20px;
+    border-bottom: 4px solid #3b82f6;
+}
+
+header h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: 0;
+    color: #cbd5e1;
+    font-size: 15px;
+}
+
+
+/* =========================
+   MENU NAVIGASI
+   ========================= */
+
+nav {
+    background-color: #ffffff;
+    padding: 14px 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(16, 87, 255, 0.08);
+    position: relative;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #18325c;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2563eb;
+}
+
+
+/* =========================
+   ISI HALAMAN
+   ========================= */
+
+main {
+    margin: 30px 20px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.06);
+}
+
+h2 {
+    color: #1d4ed8;
+}
+
+
+/* =========================
+   PROFIL
+   ========================= */
+
+.profil {
+    max-width: 680px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #dbe4f0;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+.profil h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #164ed1;
+    font-size: 26px;
+}
+
+
+/* Foto Profil */
+
+.foto {
+    display: block;
+    width: 155px;
+    height: 155px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #3b82f6;
+    margin: 0 auto 18px;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+}
+
+
+/* Nama */
+
+.profil h3 {
+    text-align: center;
+    color: #1d4ed8;
+    margin: 10px 0 5px;
+    font-size: 23px;
+}
+
+
+/* Status */
+
+.profil .status {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+
+/* Garis */
+
+.profil hr {
+    border: none;
+    border-top: 1px solid #dbe4f0;
+    margin: 25px 0;
+}
+
+
+/* Judul Bagian */
+
+.profil h4 {
+    color: #ffffff;
+    background: linear-gradient(90deg, #1e3a5f, #15da2c);
+    padding: 11px 15px;
+    border-radius: 7px;
+    text-align: center;
+    margin-top: 22px;
+}
+
+
+/* =========================
+   DATA MAHASISWA
+   ========================= */
+
+.data-mahasiswa {
+    text-align: center;
+}
+
+.data-mahasiswa p {
+    text-align: center;
+    line-height: 1.8;
+    color: #475569;
+}
+
+
+/* =========================
+   TENTANG SAYA
+   ========================= */
+
+.tentang-saya {
+    text-align: center;
+    line-height: 1.9;
+    color: #475569;
+}
+
+
+/* =========================
+   HOBI
+   ========================= */
+
+.hobi {
+    text-align: left;
+    line-height: 1.9;
+    padding-left: 28px;
+    color: #000000;
+}
+
+.hobi li::marker {
+    color: #ff2f00;
+}
+
+
+/* =========================
+   KEAHLIAN
+   ========================= */
+
+.keahlian {
+    text-align: left;
+    line-height: 1.9;
+    padding-left: 28px;
+    color: #273241;
+}
+
+.keahlian li::marker {
+    color: #ef1111;
+}
+
+
+/* =========================
+   KEGIATAN
+   ========================= */
+
+.kegiatan {
+    max-width: 850px;
+    margin: 30px auto;
+    background-color: #e2eaf5;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #d5dfed;
+}
+
+.kegiatan h2 {
+    text-align: center;
+    margin-bottom: 28px;
+    color: #0f172a;
+    font-size: 26px;
+}
+
+.kegiatan-card {
+    background-color: #ffffff;
+    padding: 22px;
+    margin-bottom: 20px;
+    border-left: 5px solid #00ec33;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.kegiatan-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
+}
+
+.kegiatan-card h3 {
+    color: #1d4ed8;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.kegiatan-card p {
+    line-height: 1.8;
+    color: #475569;
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   FORM PENDAFTARAN
+   ========================= */
+
+.form-container {
+    max-width: 620px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #dbe4f0;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.07);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0f172a;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 16px;
+    font-weight: bold;
+    color: #10cf8f;
+}
+
+
+/* Input Form */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    background-color: #f8fafc;
+    color: #1e293b;
+    font-family: inherit;
+    font-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #f63b3b;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+    background-color: #ffffff;
+}
+
+textarea {
+    height: 110px;
+    resize: vertical;
+}
+
+
+/* =========================
+   TOMBOL
+   ========================= */
+
+button {
+    padding: 12px 22px;
+    background: linear-gradient(135deg, #d23e09, #35eb25);
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #5fe102, #000000);
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #0f172a;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 35px;
+    border-top: 3px solid #13cd22;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE - TABLET & HP
+   ========================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 28px 15px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    header p {
+        font-size: 13px;
+    }
+
+    nav {
+        padding: 12px 5px;
+    }
+
+    nav ul li {
+        margin: 6px 8px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    main {
+        margin: 18px 12px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .profil,
+    .kegiatan,
+    .form-container {
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .profil h2,
+    .kegiatan h2 {
+        font-size: 22px;
+    }
+
+    .profil h3 {
+        font-size: 20px;
+    }
+
+    .foto {
+        width: 130px;
+        height: 130px;
+    }
+
+    .kegiatan-card {
+        padding: 16px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    footer {
+        padding: 18px 12px;
+    }
+}
